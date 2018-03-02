@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.durma.idj.Model.Video;
@@ -21,10 +22,12 @@ import java.util.ArrayList;
 public class TabVideoAdapter extends RecyclerView.Adapter<TabVideoAdapter.TabVideoViewHolder> {
     private Context context;
     private ArrayList<Video> videos;
+    private String headTitle;
 
-    public TabVideoAdapter(Context context, ArrayList<Video> videos) {
+    public TabVideoAdapter(Context context, ArrayList<Video> videos, String headTitle) {
         this.context = context;
         this.videos = videos;
+        this.headTitle = headTitle;
     }
 
     @Override
@@ -61,6 +64,8 @@ public class TabVideoAdapter extends RecyclerView.Adapter<TabVideoAdapter.TabVid
             image = (ImageView) itemView.findViewById(R.id.image);
             name = (TextView) itemView.findViewById(R.id.name);
             views = (TextView) itemView.findViewById(R.id.views);
+
+
         }
 
     }

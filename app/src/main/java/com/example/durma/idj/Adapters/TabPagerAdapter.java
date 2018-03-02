@@ -56,7 +56,7 @@ public class TabPagerAdapter extends PagerAdapter {
         switch (layouts.get(position)) {
             case R.layout.tab_card_content:
                 view = inflater.inflate(R.layout.tab_card_content, container, false);
-                adapter = new TabVideoAdapter(view.getContext(), MainActivity.getAllVideos());
+                adapter = new TabVideoAdapter(view.getContext(), MainActivity.getAllVideos(), null);
                 recyclerView = (RecyclerView) view.findViewById(R.id.videoContent);
                 recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext(), LinearLayoutManager.HORIZONTAL, false));
                 recyclerView.setHasFixedSize(true);
@@ -65,7 +65,7 @@ public class TabPagerAdapter extends PagerAdapter {
                 break;
             case R.layout.tab_card_content2:
                 view = inflater.inflate(R.layout.tab_card_content2, container, false);
-                adapter = new TabVideoAdapter(view.getContext(), MainActivity.getAllVideos());
+                adapter = new TabVideoAdapter(view.getContext(), MainActivity.getAllVideos(), null);
                 recyclerView = (RecyclerView) view.findViewById(R.id.videoContent);
                 recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext(), LinearLayoutManager.HORIZONTAL, false));
                 recyclerView.setHasFixedSize(true);
@@ -75,7 +75,7 @@ public class TabPagerAdapter extends PagerAdapter {
 
             default:
                 view = inflater.inflate(R.layout.tab_card_content, container, false);
-                adapter = new TabVideoAdapter(view.getContext(), MainActivity.getAllVideos());
+                adapter = new TabVideoAdapter(view.getContext(), MainActivity.getAllVideos2(), null);
                 recyclerView = (RecyclerView) view.findViewById(R.id.videoContent);
                 recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext(), LinearLayoutManager.HORIZONTAL, false));
                 recyclerView.setAdapter(adapter);

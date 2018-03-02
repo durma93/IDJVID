@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="310dp"
+    android:layout_height="230dp"
     android:background="@color/tabColor"
     android:layout_margin="5dp"
     tools:context="com.example.durma.idj.Activities.MainActivity">
@@ -20,7 +20,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tabLayout"
-            android:background="@color/tabColor"
             app:tabSelectedTextColor="@android:color/white"
             app:tabTextColor="@android:color/white"
             app:tabIndicatorColor="@color/tabLineColor"
@@ -35,7 +34,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/videoContent"
-        android:background="@color/tabColor"
         android:layout_below="@id/appBar" />
 
 </LinearLayout>
