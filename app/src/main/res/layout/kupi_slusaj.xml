@@ -30,7 +30,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:layout_gravity="center_vertical"
-            android:src="@drawable/itunesresized"
+            android:src="@drawable/itunes"
             android:tint="@color/white"/>
 
         <ImageView
