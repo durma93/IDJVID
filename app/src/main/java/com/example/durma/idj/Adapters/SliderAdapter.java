@@ -1,6 +1,7 @@
 package com.example.durma.idj.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
@@ -11,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.durma.idj.Activities.PlayVideoActivity;
 import com.example.durma.idj.Model.Video;
 import com.example.durma.idj.R;
 import com.squareup.picasso.Picasso;
@@ -57,6 +59,14 @@ public class SliderAdapter extends PagerAdapter {
             Picasso.with(context).
                     load(images.get(position).getSlika()).resize(800,600)
                     .into(slika);
+
+            slika.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(context, PlayVideoActivity.class);
+                    context.startActivity(intent);
+                }
+            });
 
             ViewPager viewPager = (ViewPager) container;
             viewPager.addView(view, 0);

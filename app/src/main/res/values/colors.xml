@@ -8,4 +8,7 @@
     <color name="primaryTextColor">#FFFFFF</color>
     <color name="zabava">#ab00f8</color>
     <color name="live">#f10000</color>
+    <color name="secondaryTextColor">#A6FF00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
 </resources>
