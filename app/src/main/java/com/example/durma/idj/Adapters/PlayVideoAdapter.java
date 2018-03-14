@@ -11,7 +11,9 @@ import android.webkit.WebView;
 import android.widget.TextView;
 
 import com.example.durma.idj.Activities.MainActivity;
+import com.example.durma.idj.BuildConfig;
 import com.example.durma.idj.R;
+import com.marcinmoskala.videoplayview.VideoPlayView;
 
 import java.util.ArrayList;
 
@@ -65,10 +67,16 @@ public class PlayVideoAdapter extends RecyclerView.Adapter<PlayVideoAdapter.Play
     @Override
     public void onBindViewHolder(PlayVideoViewHolder holder, int position) {
         if (holder.getItemViewType() == VIDEO_MODE) {
-            WebView video = (WebView) holder.itemView.findViewById(R.id.videoPlayer);
-            video.loadData("<iframe width=\"340\" height=\"200\" src=\"https://www.youtube.com/embed/BGHR2oCGvgQ\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>", "text/html", "utf-8");
+
+            VideoPlayView videoPlayView = (VideoPlayView)holder.itemView.findViewById(R.id.videoPlayer);
+
+            videoPlayView.setVideoUrl("https://github.com/MarcinMoskala/VideoPlayView/raw/master/videos/cat1.mp4");
+
+
+            /*WebView video = (WebView) holder.itemView.findViewById(R.id.videoPlayer);
+            video.loadData("<iframe width=\"350\" height=\"200\" src=\"https://www.youtube.com/embed/BGHR2oCGvgQ\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>", "text/html", "utf-8");
             video.getSettings().setJavaScriptEnabled(true);
-            video.setWebChromeClient(new WebChromeClient() {});
+            video.setWebChromeClient(new WebChromeClient() {});*/
         } else if(holder.getItemViewType() == LIKE_SHARE_USER_MODE) {
 
         } else if(holder.getItemViewType() == KUPI_SLUSAJ_MODE) {

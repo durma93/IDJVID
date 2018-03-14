@@ -14,6 +14,8 @@
         android:layout_marginBottom="60dp" />
 
     <include layout="@layout/appbar_bottom"
-        android:layout_below="@id/playVideoContainer" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
 
 </RelativeLayout>

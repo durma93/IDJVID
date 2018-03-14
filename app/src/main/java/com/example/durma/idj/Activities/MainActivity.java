@@ -60,11 +60,12 @@ public class MainActivity extends AppCompatActivity {
 
     public static ArrayList<Video> getAllVideos2() {
         ArrayList<Video> videos = new ArrayList<>();
+        videos.add(new Video(R.drawable.marko_mandic, "Marko Mandic - Ramdagadam (Official Video)", "11,305,549 Views"));
         videos.add(new Video(R.drawable.nikolija, "Nikolija - Los momak (Official Video)", "20,392,564 Views"));
         videos.add(new Video(R.drawable.elena, "Elena - Zlato", "11,305,549 Views"));
         videos.add(new Video(R.drawable.cvija, "Cvija - Brzina", "8,545,243 Views"));
         videos.add(new Video(R.drawable.krvavi_balkan, "THC feat Coby - Krvavi balkan (Official Video)", "11,305,549 Views"));
-        videos.add(new Video(R.drawable.marko_mandic, "Marko Mandic - Ramdagadam (Official Video)", "11,305,549 Views"));
+
 
 
         return videos;
@@ -97,6 +98,21 @@ public class MainActivity extends AppCompatActivity {
     public static ArrayList<Emisije> getAllEmisije() {
         ArrayList<Emisije> emisije = new ArrayList<>();
 
+        emisije.add(new Emisije(R.drawable.idjhot, "IDJHot"));
+        emisije.add(new Emisije(R.drawable.idjtoplista, "IDJToplista"));
+        emisije.add(new Emisije(R.drawable.idjhot2, "IDJHot 2"));
+        emisije.add(new Emisije(R.drawable.idjhot3, "Playlist"));
+        emisije.add(new Emisije(R.drawable.idjtoplista, "Emerging"));
+        emisije.add(new Emisije(R.drawable.idjhot, "IDJHot"));
+        emisije.add(new Emisije(R.drawable.idjtoplista, "IDJToplista"));
+        emisije.add(new Emisije(R.drawable.idjhot2, "IDJHot 2"));
+        emisije.add(new Emisije(R.drawable.idjhot3, "Playlist"));
+        emisije.add(new Emisije(R.drawable.idjtoplista, "Emerging"));
+        emisije.add(new Emisije(R.drawable.idjhot, "IDJHot"));
+        emisije.add(new Emisije(R.drawable.idjtoplista, "IDJToplista"));
+        emisije.add(new Emisije(R.drawable.idjhot2, "IDJHot 2"));
+        emisije.add(new Emisije(R.drawable.idjhot3, "Playlist"));
+        emisije.add(new Emisije(R.drawable.idjtoplista, "Emerging"));
         emisije.add(new Emisije(R.drawable.idjhot, "IDJHot"));
         emisije.add(new Emisije(R.drawable.idjtoplista, "IDJToplista"));
         emisije.add(new Emisije(R.drawable.idjhot2, "IDJHot 2"));

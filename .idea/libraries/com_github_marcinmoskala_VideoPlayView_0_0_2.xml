@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.marcinmoskala:VideoPlayView-0.0.2">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/VideoPlayView-0.0.2.aar/5a124d381e6e537b8639293b6f3664c5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/VideoPlayView-0.0.2.aar/5a124d381e6e537b8639293b6f3664c5/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.marcinmoskala/VideoPlayView/0.0.2/7cd0c19872edffa16a338c96f6de76fa1ca32fd8/VideoPlayView-0.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

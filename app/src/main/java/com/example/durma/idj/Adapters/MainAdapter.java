@@ -2,8 +2,11 @@ package com.example.durma.idj.Adapters;
 
 import android.annotation.TargetApi;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
+import android.net.LinkAddress;
 import android.os.Build;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -18,8 +21,10 @@ import android.widget.TextView;
 
 import com.antonyt.infiniteviewpager.InfinitePagerAdapter;
 import com.example.durma.idj.Activities.MainActivity;
+import com.example.durma.idj.Activities.SeeMoreActivity;
 import com.example.durma.idj.R;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
@@ -30,6 +35,9 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MyViewHolder> 
 
     Context context;
     ArrayList rows;
+
+    LinearLayout linearLayout;
+
 
     private final int SLIDER_MODE = 0;
     private final int TAB_MODE = 1;
@@ -106,16 +114,42 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MyViewHolder> 
             Log.d("MainAdapter", "Loaded TAB");
         }
         else if (holder.getItemViewType() == SPOTS_MODE) {
+            linearLayout = (LinearLayout)holder.itemView.findViewById(R.id.seeMore);
+            linearLayout.setOnClickListener(new View.OnClickListener() {
+
+
+                @Override
+                public void onClick(View view) {
+                    Intent i = new Intent(context, SeeMoreActivity.class);
+                    i.putExtra("headTitle", "SPOTOVI");
+                    context.startActivity(i);
+                }
+            });
+
 
             TextView title = (TextView) holder.itemView.findViewById(R.id.headTitle);
             title.setText("SPOTOVI");
             String name = title.getText().toString();
 
             RecyclerViewAdapterSpotovi recyclerViewAdapterSpotovi = new RecyclerViewAdapterSpotovi(context, MainActivity.getAllSpotovi(), name);
+
             holder.recyclerView.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
             holder.recyclerView.setAdapter(recyclerViewAdapterSpotovi);
         }
         else if (holder.getItemViewType() == CLIPS_MODE) {
+
+            linearLayout = (LinearLayout)holder.itemView.findViewById(R.id.seeMore);
+
+            linearLayout.setOnClickListener(new View.OnClickListener() {
+
+
+                @Override
+                public void onClick(View view) {
+                    Intent i = new Intent(context, SeeMoreActivity.class);
+                    i.putExtra("headTitle", "IDJKLIPS");
+                    context.startActivity(i);
+                }
+            });
 
             TextView title = (TextView) holder.itemView.findViewById(R.id.headTitle);
             title.setText("IDJKLIPS");
@@ -125,6 +159,19 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MyViewHolder> 
             holder.recyclerView.setAdapter(recyclerViewAdapterIDJClips);
         }
         else if (holder.getItemViewType() == EMISIJE_MODE) {
+
+            linearLayout = (LinearLayout)holder.itemView.findViewById(R.id.seeMore);
+
+            linearLayout.setOnClickListener(new View.OnClickListener() {
+
+
+                @Override
+                public void onClick(View view) {
+                    Intent i = new Intent(context, SeeMoreActivity.class);
+                    i.putExtra("headTitle", "EMISIJE");
+                    context.startActivity(i);
+                }
+            });
 
             TextView title = (TextView) holder.itemView.findViewById(R.id.headTitle);
             title.setText("EMISIJE");
@@ -136,27 +183,69 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MyViewHolder> 
 
         else if (holder.getItemViewType() == IZDANJA_MODE) {
 
+            linearLayout = (LinearLayout)holder.itemView.findViewById(R.id.seeMore);
+
+            linearLayout.setOnClickListener(new View.OnClickListener() {
+
+
+                @Override
+                public void onClick(View view) {
+                    Intent i = new Intent(context, SeeMoreActivity.class);
+                    i.putExtra("headTitle", "IZDANJA");
+                    context.startActivity(i);
+                }
+            });
+
             TextView title = (TextView) holder.itemView.findViewById(R.id.headTitle);
             title.setText("IZDANJA");
             String name = title.getText().toString();
+
             RecyclerViewAdapterIzdanja recyclerViewAdapterIzdanja = new RecyclerViewAdapterIzdanja(context, MainActivity.getAllIzdanja(), name);
             holder.recyclerView.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
             holder.recyclerView.setAdapter(recyclerViewAdapterIzdanja);
         }
         else if (holder.getItemViewType() == PLAYLIST_MODE) {
 
+            linearLayout = (LinearLayout)holder.itemView.findViewById(R.id.seeMore);
+
+            linearLayout.setOnClickListener(new View.OnClickListener() {
+
+
+                @Override
+                public void onClick(View view) {
+                    Intent i = new Intent(context, SeeMoreActivity.class);
+                    i.putExtra("headTitle", "PLAYLIST");
+                    context.startActivity(i);
+                }
+            });
+
             TextView title = (TextView) holder.itemView.findViewById(R.id.headTitle);
             title.setText("PLAYLIST");
             String name = title.getText().toString();
+
             RecyclerViewAdapterPlaylist recyclerViewAdapterPlaylist = new RecyclerViewAdapterPlaylist(context, MainActivity.getAllPlaylist(), name);
             holder.recyclerView.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
             holder.recyclerView.setAdapter(recyclerViewAdapterPlaylist);
         }
         else if (holder.getItemViewType() == IZVODJACI_MODE) {
 
+            linearLayout = (LinearLayout)holder.itemView.findViewById(R.id.seeMore);
+
+            linearLayout.setOnClickListener(new View.OnClickListener() {
+
+
+                @Override
+                public void onClick(View view) {
+                    Intent i = new Intent(context, SeeMoreActivity.class);
+                    i.putExtra("headTitle", "IZVODJACI");
+                    context.startActivity(i);
+                }
+            });
+
             TextView title = (TextView) holder.itemView.findViewById(R.id.headTitle);
             title.setText("IZVODJACI");
             String name = title.getText().toString();
+
             RecyclerViewAdapterIzvodjaci recyclerViewAdapterIzvodjaci = new RecyclerViewAdapterIzvodjaci(context, MainActivity.getAllIzvodjaci(), name);
             holder.recyclerView.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
             holder.recyclerView.setAdapter(recyclerViewAdapterIzvodjaci);

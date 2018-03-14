@@ -57,7 +57,7 @@ public class RecyclerViewAdapterSpotovi extends RecyclerView.Adapter<RecyclerVie
                 into(holder.image);
 
         holder.name.setText(video.getNaziv());
-        holder.name.setText(video.getBroj_pregleda());
+        holder.views.setText(video.getBroj_pregleda());
     }
 
     @Override

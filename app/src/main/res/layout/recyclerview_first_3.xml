@@ -30,18 +30,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recyclerViewcontainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-
-            >
+            android:background="@color/colorPrimary">
 
         </android.support.v7.widget.RecyclerView>
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/seeMore"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="horizontal"
@@ -59,9 +59,11 @@
             />
         <ImageView
             android:layout_gravity="center"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
-            android:src="@drawable/left_arrow"/>
+            android:layout_marginLeft="4dp"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/see_more"
+            android:layout_marginStart="4dp" />
 
     </LinearLayout>
 

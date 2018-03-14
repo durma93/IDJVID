@@ -30,7 +30,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:layout_gravity="center_vertical"
-            android:src="@drawable/itunes"
+            android:src="@drawable/itunes2"
             android:tint="@color/white"/>
 
         <ImageView
@@ -41,7 +41,7 @@
             android:gravity="center"
             android:layout_gravity="center_vertical"
             android:padding="5dp"
-            android:src="@drawable/amazon"
+            android:src="@drawable/amazon2"
             android:scaleType="centerInside"/>
 
         <ImageView
@@ -52,7 +52,7 @@
             android:gravity="center"
             android:layout_gravity="center_vertical"
             android:padding="5dp"
-            android:src="@drawable/google_play"
+            android:src="@drawable/google_play2"
             android:scaleType="centerInside"/>
 
     </LinearLayout>
@@ -85,7 +85,7 @@
             android:gravity="center"
             android:layout_gravity="center_vertical"
             android:padding="5dp"
-            android:src="@drawable/deezer"
+            android:src="@drawable/deezer2"
             android:scaleType="centerInside"/>
 
         <ImageView
@@ -96,7 +96,7 @@
             android:gravity="center"
             android:layout_gravity="center_vertical"
             android:padding="5dp"
-            android:src="@drawable/spotify"
+            android:src="@drawable/spotify2"
             android:scaleType="centerInside"/>
 
         <ImageView
@@ -107,7 +107,7 @@
             android:gravity="center"
             android:layout_gravity="center_vertical"
             android:padding="5dp"
-            android:src="@drawable/youtube"
+            android:src="@drawable/youtube2"
             android:scaleType="centerInside"/>
 
     </LinearLayout>

@@ -15,8 +15,8 @@
 
         <ImageView
             android:id="@+id/image"
-            android:layout_width="140dp"
-            android:layout_height="80dp"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
             android:src="@drawable/krvavi_balkan"
             android:scaleType="fitXY"/>
 
@@ -30,7 +30,7 @@
         android:maxWidth="140dp"
         android:maxHeight="200dp"
         android:text="THCF x COBY - KRVAVI BALKAN"
-        android:textSize="11sp"
+        android:textSize="13sp"
         android:textStyle="bold"
         android:textColor="@android:color/white"
         android:paddingTop="3dp"/>
@@ -40,7 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:maxWidth="140dp"
-        android:textSize="8sp"
+        android:textSize="10sp"
         android:textColor="@android:color/white"
         android:paddingTop="3dp"/>
 
